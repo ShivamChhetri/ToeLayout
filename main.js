@@ -55,6 +55,8 @@ form.addEventListener('submit',e=>{
 });
 
 function logout(){
+    fleet.value=null;
+    password.value=null;
     main.style.display="none";
     loginForm.style.display="block";
 }
