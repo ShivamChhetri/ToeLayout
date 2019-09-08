@@ -29,7 +29,7 @@ for(let i=1;i<=8;i++){
     })
 }
 
-let links= document.querySelectorAll('a:not(.home)');
+let links= document.querySelectorAll('a:not(.home):not(.logout)');
 
 links.forEach(link => {
     link.addEventListener('click',()=>{
@@ -37,4 +37,25 @@ links.forEach(link => {
     });  
 });
 
+// login 
+let email= document.getElementById('email');
+let password= document.getElementById('password');
+let main= document.getElementById('main');
+let loginForm= document.getElementById('loginForm');
+let form =document.querySelector('form');
+form.addEventListener('submit',e=>{
+    e.preventDefault();
+    if(email.value=="user@electorq.com" && password.value=="user123"){
+        main.style.display="block";
+        loginForm.style.display="none";
+        console.log('hello')
+    }else{
+        alert("Incorrect credentials");
+    }
+});
+
+function logout(){
+    main.style.display="none";
+    loginForm.style.display="block";
+}
 
