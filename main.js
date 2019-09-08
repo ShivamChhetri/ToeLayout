@@ -38,14 +38,14 @@ links.forEach(link => {
 });
 
 // login 
-let email= document.getElementById('email');
+let fleet= document.getElementById('fleet');
 let password= document.getElementById('password');
 let main= document.getElementById('main');
 let loginForm= document.getElementById('loginForm');
 let form =document.querySelector('form');
 form.addEventListener('submit',e=>{
     e.preventDefault();
-    if(email.value=="user@electorq.com" && password.value=="user123"){
+    if(fleet.value=="ABC_fleet" && password.value=="fleet_ABC"){
         main.style.display="block";
         loginForm.style.display="none";
         console.log('hello')
