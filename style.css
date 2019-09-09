@@ -2,6 +2,7 @@
     --side-color:rgba(34, 206, 11, 0.877);
     --blue-shade:rgba(7, 108, 241, 0.877);
     --scooter-img: url('scooter.png');
+    --height-size: 720px;
 }
 .no-gutters {
     margin-right: 0;
@@ -21,7 +22,7 @@ body{
 }
 /* side bar items */
 .sidebar{
-    height:665px;
+    height:var(--height-size);
 }
 .box{
     border: 3px solid var(--side-color);
@@ -126,7 +127,7 @@ img{
 /* login */
 #loginForm{
     background:rgb(116, 109, 109);
-    height:680px;
+    height:var(--height-size);
     overflow: auto;
 }
 form{
